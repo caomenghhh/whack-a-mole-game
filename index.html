@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>打地鼠 Web 版</title>
+    <style>
+        .hole {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #000;
+            margin: 10px;
+            cursor: pointer;
+            background-image: url('hole.png'); /* 洞的图片 */
+            background-size: cover;
+        }
+        .mole {
+            background-image: url('mole.png'); /* 地鼠的图片 */
+        }
+    </style>
+</head>
+<body>
+    <h1>打地鼠游戏</h1>
+    <p>分数: <span id="score">0</span></p>
+    <p>剩余时间: <span id="time-left">30</span></p>
+    <div id="game">
+        <!-- 9 个洞 -->
+        <div style="display: flex; gap: 10px;">
+            <div class="hole" data-hole="1"></div>
+            <div class="hole" data-hole="2"></div>
+            <div class="hole" data-hole="3"></div>
+        </div>
+        <div style="display: flex; gap: 10px;">
+            <div class="hole" data-hole="4"></div>
+            <div class="hole" data-hole="5"></div>
+            <div class="hole" data-hole="6"></div>
+        </div>
+        <div style="display: flex; gap: 10px;">
+            <div class="hole" data-hole="7"></div>
+            <div class="hole" data-hole="8"></div>
+            <div class="hole" data-hole="9"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
